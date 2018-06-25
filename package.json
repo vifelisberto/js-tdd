@@ -1,7 +1,7 @@
 {
-  "name": "js-tdd-course",
+  "name": "js-tdd",
   "version": "1.0.0",
-  "description": "Biblioteca do curso de JD com TDD",
+  "description": "Biblioteca JS com TDD",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,10 +15,13 @@
     "tdd",
     "library"
   ],
-  "author": "Vinicius Felisberto <vi.felis@hotmil.com>",
+  "author": "Vinicius Felisberto <vi.felis@hotmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vifelisberto/js-tdd/issues"
   },
-  "homepage": "https://github.com/vifelisberto/js-tdd#readme"
+  "homepage": "https://github.com/vifelisberto/js-tdd#readme",
+  "devDependencies": {
+    "eslint": "^5.0.0"
+  }
 }
