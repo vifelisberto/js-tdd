@@ -1,6 +1,6 @@
-# Project Title
+# JS with TDD
 
-One Paragraph of project description goes here
+JavaScript Student
 
 ## Getting Started
 
