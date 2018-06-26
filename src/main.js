@@ -3,7 +3,7 @@ const b = 2;
 const c = 'dha';
 
 function sum() {
-  return a + b ;
+  return a + b + c;
 }
 
 sum();
