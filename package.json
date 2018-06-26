@@ -4,6 +4,8 @@
   "description": "Biblioteca JS com TDD",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/vifelisberto/js-tdd#readme",
   "devDependencies": {
-    "eslint": "^5.0.0"
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
   }
 }
