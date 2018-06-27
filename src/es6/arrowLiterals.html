@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrow Function e Template Literals JS</title>
+</head>
+<body>
+      <button id="btn">Clique!</button>
+  <script>
+
+    /* Arrow Function */
+    const ireland = ['Dublin', 'Galway', 'Cork'];
+
+    const love = ireland.map(function(name){
+        return `I love ${name}!`;
+    });
+
+    const loveArrowSingle = ireland.map(name => {
+        return `I love ${name}!`;
+    });
+
+    const loveArrowOneLine = ireland.map(name => `I love ${name}!`);
+
+    const loveChain = ireland
+    .filter(name => name === 'Dublin')
+    .map(name => `I love ${name}`);
+
+    // console.log(loveChain);
+
+    /* This Arrow */
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function(){
+        console.log(this);
+    });
+    //Com Arrow o this pega o contexto total (window)
+    const btnArrow = document.getElementById('btn');
+    btnArrow.addEventListener('click', () => {
+        // console.log(this);
+    });
+
+   /* Template Literals */
+   let fruit = "banana";
+
+const newFruits =
+`${fruit}
+orange
+apple
+`;
+
+    console.log(newFruits);
+  </script>
+</body>
+</html>
